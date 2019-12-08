@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+# pynotebook
+
+# vscode
+*.vscode
+
+#itchat
+*.png
+*.pkl
+*.gif
+*.pickle
+
+# sqlite
+*.sqlite3
+
+# pycharm
+*.idea*
