@@ -12,12 +12,6 @@ build
 # vscode
 *.vscode
 
-#itchat
-*.png
-*.pkl
-*.gif
-*.pickle
-
 # sqlite
 *.sqlite3
 
