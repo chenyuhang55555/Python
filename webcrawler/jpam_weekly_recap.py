@@ -4,12 +4,13 @@ from requests_html import HTMLSession
 import requests
 
 session = HTMLSession()
-r = session.get("https://am.jpmorgan.com/us/en/asset-management/gim/adv/insights/weekly-market-recap")
-r.html.render()
-soup = BeautifulSoup(r.html.html, 'html.parser')
-a_string = soup.find(string="View the recap")
-link=a_string.find_parents("a")[0]
-pdf_url="https://am.jpmorgan.com"+link.get("href")
+#r = session.get("https://am.jpmorgan.com/us/en/asset-management/gim/adv/insights/weekly-market-recap")
+#r.html.render()
+#soup = BeautifulSoup(r.html.html, 'html.parser')
+#a_string = soup.find(string="View the recap")
+#link=a_string.find_parents("a")[0]
+#pdf_url="https://am.jpmorgan.com"+link.get("href")
+pdf_url="https://am.jpmorgan.com/content/dam/jpm-am-aem/global/en/insights/market-insights/weekly-market-recap-us.pdf"
 
 r_with_pdf = requests.get(pdf_url)
 
